@@ -21,6 +21,20 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* I added thisa but don't know if it is correct */
+main {
+  display: flex;
+  padding-bottom: 25px;
+  flex-direction: row;
+}
+
+/* 320px, 768px, and 1200px */ /* 992 */
+@media only screen and (max-width: 980px) {
+  main{
+    flex-direction: column;
+  }
+}
+
 header {
   background: var(--secondary);
   padding: 30px 25px;
